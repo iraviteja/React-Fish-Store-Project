@@ -339,10 +339,10 @@ header.top h3:after {
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 5vh;
-  -webkit-perspective: 1000px;
+  /* -webkit-perspective: 1000px;
   perspective: 1000px;
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; */
 }
 .catch-of-the-day > * {
   -webkit-box-flex: 1;
@@ -378,10 +378,10 @@ header.top h3:after {
   flex-shrink: 1;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  -webkit-transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08)
+  /* -webkit-transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08)
     translateX(24px);
   transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08)
-    translateX(24px);
+    translateX(24px); */
 }
 input#fold:not(:checked) ~ #main .catch-of-the-day > * {
   -webkit-transform: none;
