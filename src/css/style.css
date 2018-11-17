@@ -367,10 +367,10 @@ header.top h3:after {
   transform: translateX(50%) rotateY(6deg) translateX(-50%);
 }
 .catch-of-the-day > *:nth-child(2) {
-  -webkit-transform: translateX(-50%) rotateY(-14deg) translateX(50%);
+  /* -webkit-transform: translateX(-50%) rotateY(-14deg) translateX(50%);
   transform: translateX(-50%) rotateY(-14deg) translateX(50%);
   border-left: 0;
-  border-right: 0;
+  border-right: 0; */
   min-width: 300px;
 }
 .catch-of-the-day > *:last-child {
