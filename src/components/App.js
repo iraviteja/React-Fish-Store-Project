@@ -58,6 +58,15 @@ class App extends Component {
     this.setState({ fishes });
   };
 
+  deleteFish = key => {
+    // 1. Take a copy of exiting state
+    const fishes = { ...this.state.fishes };
+    // 2. update that state || Delete fish
+    fishes[key] = null;
+    // 3. Update state
+    this.setState({ fishes });
+  };
+
   loadSampleFishes = () => {
     this.setState({ fishes: sampleFishes });
   };
@@ -69,6 +78,15 @@ class App extends Component {
     orderCopy[key] = orderCopy[key] + 1 || 1;
     // 3. Call setstate to update our state object
     this.setState({ order: orderCopy });
+  };
+
+  removeFromOrder = key => {
+    // 1. Take a copy of exiting state
+    const order = { ...this.state.order };
+    // 2. remove item from order
+    delete order[key];
+    // 3. Call setstate to update our state object
+    this.setState({ order });
   };
 
   render() {
@@ -91,10 +109,12 @@ class App extends Component {
           fishes={this.state.fishes}
           order={this.state.order}
           // {...this.state} to pass whole state
+          removeFromOrder={this.removeFromOrder}
         />
         <Inventory
           addFish={this.addFish}
           updateFish={this.updateFish}
+          deleteFish={this.deleteFish}
           loadSampleFishes={this.loadSampleFishes}
           fishes={this.state.fishes}
         />
