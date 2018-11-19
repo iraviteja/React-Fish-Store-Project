@@ -21,7 +21,8 @@
 .order-exit.order-exit-active {
   -webkit-transform: translateX(120%);
   transform: translateX(120%);
-  padding: 0;
+  padding: 0 !important;
+  overflow: hidden;
 }
 .count-enter {
   background: #f00;
