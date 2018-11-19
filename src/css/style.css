@@ -47,8 +47,8 @@
 }
 .count-exit.count-exit-active {
   background: #008000;
-  -webkit-transform: translateY(-100%) scale(3);
-  transform: translateY(-100%) scale(3);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 @font-face {
   font-family: "haymakerregular";
